@@ -47,6 +47,14 @@ section {
     background-size: cover;
    
 }
+
+.under-construction {
+    height: 500px;
+    /*Making width smaller makes img much more clear, not sure about other implications yet*/
+    width: 100%;
+    background-size: cover;
+}
+
 aside {
     background-color: white;
     color: black;
