@@ -1,5 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: pink;
+    background-color: black;
+    color: white;
 }
 
 h1 {
@@ -11,20 +17,56 @@ h1 {
 
 nav {
     text-align: right;
-    display: inline;
     margin: 5px;
 }
 
+li {
+    display: inline;
+}
+
 section {
-    background-color: yellow;
+    background-color: black;
     width: 100%;
     height: 100%;
     text-align: center;
    
     padding: 25px; 
-    border: 5px dashed black none;
+    border: solid rgb(25, 25, 152);
+   
 }
-
+ #subtitle-img {
+    border-top: solid rgb(25, 25, 152);
+    border-bottom: rgb(25, 25, 152) solid;
+    border-left: none;
+    border-right: none;
+    border-width: 10px;
+ }
+.subtitle {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+   
+}
 aside {
     background-color: white;
+    color: black;
+}
+
+#about-me {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+footer {
+
+}
+
+button {
+    color: white;
 }
