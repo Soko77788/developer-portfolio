@@ -1,6 +1,5 @@
 * {
-    padding: 0;
-    margin: 0;
+
 }
 
 body {
@@ -8,20 +7,55 @@ body {
     color: white;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 200%
-    text-align: left;
+header {
+   
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
+h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: left;
+    font-family: Papyrus, sans-serif; 
+}
+
+#soko77788 {
+   display: flex;
+   justify-content: flex-end;
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
 }
 
 nav {
     text-align: right;
-    margin: 5px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    font-family: papyrus, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 li {
     display: inline;
+   margin: 20px;
+   padding-top: 15px;
 }
 
 section {
@@ -30,8 +64,8 @@ section {
     height: 100%;
     text-align: center;
    
-    padding: 25px; 
-    border: solid rgb(25, 25, 152);
+    padding: 20px; 
+    
    
 }
  #subtitle-img {
@@ -41,6 +75,7 @@ section {
     border-right: none;
     border-width: 10px;
  }
+
 .subtitle {
     height: 200px;
     width: 100%;
@@ -49,10 +84,12 @@ section {
 }
 
 .under-construction {
+   
     height: 500px;
     /*Making width smaller makes img much more clear, not sure about other implications yet*/
     width: 100%;
     background-size: cover;
+    
 }
 
 aside {
@@ -71,10 +108,40 @@ aside {
     background-color: #2589bd;
 }
 
+.project-example {
+   margin: 0px;
+   padding: 0px;
+  
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
 footer {
 
 }
 
-button {
-    color: white;
+p {
+    color: pink;
+}
+
+.container {
+    border: none;
+}
+
+.container1 p {
+    border: none;
+    background-color: red;
+    color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    border: none;
 }
