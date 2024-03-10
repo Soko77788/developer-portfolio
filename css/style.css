@@ -69,16 +69,25 @@ section {
    
 }
  #subtitle-img {
-    border-top: solid rgb(25, 25, 152);
-    border-bottom: rgb(25, 25, 152) solid;
+    border-top: dashed white;
+    border-bottom: dashed white;
     border-left: none;
     border-right: none;
-    border-width: 10px;
+    border-width: 5px;
+    margin-left: -15px;
+    
+ }
+
+ #subtitle-img p {
+    font-family: Papyrus, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
  }
 
 .subtitle {
     height: 200px;
-    width: 100%;
+    width: 105%;
     background-size: cover;
    
 }
@@ -95,6 +104,7 @@ section {
 aside {
     background-color: white;
     color: black;
+    font-size: 50px;
 }
 
 #about-me {
@@ -109,7 +119,7 @@ aside {
 }
 
 .project-example {
-   margin: 0px;
+   margin-bottom: 20px;
    padding: 0px;
   
 }
@@ -136,8 +146,8 @@ p {
 
 .container1 p {
     border: none;
-    background-color: red;
-    color: green;
+    background-color: grey;
+    color: yellow;
     padding: 10px;
     margin-bottom: 10px;
 }
