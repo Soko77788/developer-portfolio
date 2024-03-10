@@ -131,7 +131,7 @@ h2 {
     position: absolute;
     bottom: -35em;
     left: 0em;
-    border: dashed rgb(190, 165, 20);
+    border: none;
 }
 
 #about-me:hover {
@@ -169,6 +169,7 @@ button:hover {
    position: relative;
     width: 80%;
 }
+
 
 h3 {
     position: relative;
