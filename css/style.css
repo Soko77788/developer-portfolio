@@ -94,34 +94,63 @@ section {
 
 .under-construction {
    
-    height: 500px;
+    height: 300px;
     /*Making width smaller makes img much more clear, not sure about other implications yet*/
     width: 100%;
     background-size: cover;
     
 }
 
+.under-construction-main {
+    height: 500px;
+    /*Making width smaller makes img much more clear, not sure about other implications yet*/
+    width: 300%;
+    margin-left: -250px;
+    background-size: cover;
+}
+
 aside {
-    background-color: white;
-    color: black;
+    background: linear-gradient(90deg, rgb(190, 165, 20), black);
+    color: white;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: papyrus, sans-serif;
+    font-weight: bold;
     font-size: 50px;
+    text-align: center;
 }
 
 #about-me {
     margin-right: 20px;
     padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    width: 50%;
+    height: 20%;
+    font-family: Papyrus, sans-serif;
+    position: absolute;
+    bottom: -35em;
+    left: 0em;
+    border: dashed rgb(190, 165, 20);
+}
+
+#about-me:hover {
+   border-color:rgb(190, 165, 20); 
+   box-shadow: 0 0 30px 25px rgb(190, 165, 20);
 }
 
 .project-example {
    margin-bottom: 20px;
    padding: 0px;
-  
+}
+
+button {
+    background-color: black;
+    border: dashed rgb(190, 165, 20);
+}
+
+button:hover {
+    box-shadow: 0 0 30px 25px rgb(190, 165, 20);
 }
 
 .button {
@@ -129,29 +158,48 @@ aside {
     justify-content: flex-end;
     margin: 10px;
     padding: 10px;
-    
+    position: relative;
+}
+
+.button-main {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+   position: relative;
+    width: 80%;
+}
+
+h3 {
+    position: relative;
+    bottom: -1em;
+    font-family: papyrus, sans-serif;
+    font-size: 40px;
+    margin-left: 70px;
 }
 
 footer {
-
-}
-
-p {
-    color: pink;
-}
-
-.container {
-    border: none;
+    border-top: dashed white;
+    border-bottom: dashed white;
+    border-left: none;
+    border-right: none;
+    border-width: 5px;
+    margin-left: -15px;
+    
 }
 
 .container1 p {
     border: none;
-    background-color: grey;
-    color: yellow;
+    background-color: black;
+    color: rgb(190, 165, 20);
     padding: 10px;
     margin-bottom: 10px;
+    font-family: papyrus, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-img{
+img {
     border: none;
+    background: linear-gradient(90deg, blue, black);
 }
