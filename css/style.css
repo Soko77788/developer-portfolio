@@ -115,9 +115,19 @@ section {
 .under-construction-main {
     height: 500px;
     /*Making width smaller makes img much more clear, not sure about other implications yet*/
-    width: 300%;
-    margin-left: -250px;
-    background-size: cover;
+    width: 100%;
+    background-image: url("../images/under-construction1.png");
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.under-construction-main img {
+    object-fit: cover;
+    object-position: top center;
 }
 
 aside {
@@ -157,11 +167,19 @@ h2 {
 
 button {
     background-color: black;
+    
+}
+
+.dashed-border {
     border: dashed rgb(190, 165, 20);
 }
 
 button:hover {
     box-shadow: 0 0 30px 25px rgb(190, 165, 20);
+}
+
+#main-anchor {
+    display: block;
 }
 
 .button {
