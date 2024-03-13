@@ -127,35 +127,22 @@ section {
     margin-bottom: 20px; 
 }
 
-.under-construction-main:visited {
-    text-decoration: none;
+.under-construction-main img {
+    object-fit: cover;
+    object-position: top center;
 }
-
-/*Img heights smaller for the secondary projects*/
 
 .under-construction {
-   
-    height: 300px;
+   height: 300px;
     width: 100%;
-    background-size: cover;
-    
-}
-
-.under-construction-main:visited {
-    text-decoration: none;
+    background-size: cover;  
 }
 
 .under-construction-main:hover {
     box-shadow: 0 0 10px 15px var(--colored-border);
 }
 
-.under-construction-main img {
-    object-fit: cover;
-    object-position: top center;
-}
-
-/*Alot of shared sytles between the main img and secondary*/
-
+/* Combined alot of styles for the imgs */
 .container1 p, .container2 p {
     border: none;
     background-color: black;
@@ -209,6 +196,12 @@ h2 {
    padding: 0px;
 }
 
+/*Fills the background around the text "Future Project" Black*/
+button {
+    background-color: black;
+    
+}
+
 /*Styling the borders*/
 
 .dashed-border {
@@ -222,6 +215,14 @@ button:hover {
 
 #main-anchor {
     display: block;   
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
 }
 
 /*Begin Styling Footer of the Page*/
