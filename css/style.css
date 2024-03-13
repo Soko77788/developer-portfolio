@@ -1,5 +1,5 @@
-* {
-
+:root {
+    --colored-border: rgb(190, 165, 20);
 }
 
 body {
@@ -7,8 +7,10 @@ body {
     color: white;
 }
 
+
+/*Begin styling header including h1, nav, and selfie pic*/
+
 header {
-   
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -18,9 +20,8 @@ header {
     width: 10%;
     position: relative;
     top: 10.5em;
-   padding-left: 15px;
-   margin-top: -140px;
-
+    padding-left: 15px;
+    margin-top: -140px;
  }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
     font-size: 80px;
     text-align: left;
     font-family: Papyrus, sans-serif; 
+    color: white;
 }
 
 #soko77788 {
@@ -50,18 +52,23 @@ nav {
     color: white;
 }
 
-nav a {
-    text-decoration: none;
-}
+
+
+/*Making the links remain the same after being clicked*/
+
 nav a:visited {
     text-decoration: none;
     color: white;
-}
+} 
 
 nav a:hover {
-    color: blue;
-    cursor: pointer;
+    color:rgb(190, 165, 20);
 }
+    
+nav a {
+    text-decoration: none;
+}
+
 
 li {
     display: inline;
@@ -69,19 +76,19 @@ li {
    padding-top: 15px;
 }
 
+/*Subtitle Section*/
+
 section {
     background-color: black;
     width: 100%;
     height: 100%;
     text-align: center;
-   
     padding: 20px; 
-    
-   
 }
+
  #subtitle-img {
-    border-top: dashed white;
-    border-bottom: dashed white;
+    border-top: dashed var(--colored-border);
+    border-bottom: dashed var(--colored-border);
     border-left: none;
     border-right: none;
     border-width: 5px;
@@ -103,18 +110,10 @@ section {
    
 }
 
-.under-construction {
-   
-    height: 300px;
-    /*Making width smaller makes img much more clear, not sure about other implications yet*/
-    width: 100%;
-    background-size: cover;
-    
-}
+/*With help from Josh placed the main img in CSS instead of html*/
 
 .under-construction-main {
     height: 500px;
-    /*Making width smaller makes img much more clear, not sure about other implications yet*/
     width: 100%;
     background-image: url("../images/under-construction1.png");
     background-size: contain;
@@ -123,12 +122,47 @@ section {
     background-position: center;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px; 
+}
+
+.under-construction {
+   
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.under-construction-main:visited {
+    text-decoration: none;
+}
+
+.under-construction-main:hover {
+    box-shadow: 0 0 10px 15px rgb(190, 165, 20);
 }
 
 .under-construction-main img {
     object-fit: cover;
     object-position: top center;
 }
+
+.container1 p, .container2 p {
+    border: none;
+    background-color: black;
+    color: rgb(190, 165, 20);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: papyrus, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container1 p {
+    font-size: 100px;
+    text-decoration: none;
+}
+
+/*Styling the aside element Aboout Me*/
 
 aside {
     background: linear-gradient(90deg, rgb(190, 165, 20), black);
@@ -156,7 +190,7 @@ h2 {
 }
 
 #about-me:hover {
-   border-color:rgb(190, 165, 20); 
+   border-color:var(--colored-border);
    box-shadow: 0 0 30px 25px rgb(190, 165, 20);
 }
 
@@ -170,16 +204,19 @@ button {
     
 }
 
+/*Styling the borders*/
+
 .dashed-border {
-    border: dashed rgb(190, 165, 20);
+    border: dashed var(--colored-border);
+    border-width: 5px;
 }
 
 button:hover {
-    box-shadow: 0 0 30px 25px rgb(190, 165, 20);
+    box-shadow: 0 0 30px 25px var(--colored-border);
 }
 
 #main-anchor {
-    display: block;
+    display: block;   
 }
 
 .button {
@@ -190,15 +227,7 @@ button:hover {
     position: relative;
 }
 
-.button-main {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-   position: relative;
-    width: 80%;
-}
-
+/*Begin Styling Footer of the Page*/
 
 h3 {
     position: relative;
@@ -209,8 +238,8 @@ h3 {
 }
 
 footer {
-    border-top: dashed white;
-    border-bottom: dashed white;
+    border-top: dashed var(--colored-border);
+    border-bottom: dashed var(--colored-border);
     border-left: none;
     border-right: none;
     border-width: 5px;
@@ -219,31 +248,38 @@ footer {
     
 }
 
-.container1 p {
-    border: none;
-    background-color: black;
-    color: rgb(190, 165, 20);
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: papyrus, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-}
 
 
 
-/*media-query*/
+
+
+
+
+
+/*media-query*/ 
+
+/*Tablet*/
 
 @media (max-width: 840px) {
-    * {
-        width: 49%
+    footer, header, section, aside {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 767px) {
-    * {
-        width: 100%
+
+/*Mobile*/
+
+@media (max-width: 480px) {
+    footer, header, section,aside {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-/*updated file name for index.html*/
+/*Demonstrating a media query with backgroud-color changing*/
+@media (max-width: 1000px) {
+    body {
+        background-color: grey;
+    }
+}

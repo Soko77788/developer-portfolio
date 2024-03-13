@@ -15,4 +15,15 @@ No installation needed as this is a personal porfolio.
 
 To view the deployed page visit 
 
+https://soko77788.github.io/developer-portfolio/
 
+
+### Credits
+
+Responsive Web Design Video made by Net Ninja
+https://www.youtube.com/watch?v=5xzaGSYd7jM
+
+
+### Learning
+
+Positioning is pretty difficult early on as a developer. Creating a responsive website for positioning is also difficult. Debugging code is tedious work. We'll use this first build as a jumping off point for the career and build some incredible apps!
