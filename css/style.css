@@ -217,6 +217,7 @@ button:hover {
 
 #main-anchor {
     display: block;   
+    text-decoration: none;
 }
 
 .button {
